@@ -1,4 +1,4 @@
-package leetcode.lesson_9_wechat;
+package wechat;
 
 public class KthSmallestElementSortedMatrix_378 {
     public int kthSmallest(int[][] matrix, int k) {

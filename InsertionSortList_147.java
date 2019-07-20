@@ -1,4 +1,4 @@
-package leetcode.lesson_9_wechat;
+package wechat;
 
 public class InsertionSortList_147 {
     public ListNode insertionSortList(ListNode head) {

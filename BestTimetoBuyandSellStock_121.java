@@ -1,4 +1,4 @@
-package leetcode.lesson_9_wechat;
+package wechat;
 
 public class BestTimetoBuyandSellStock_121 {
     public int maxProfit(int[] prices) {
