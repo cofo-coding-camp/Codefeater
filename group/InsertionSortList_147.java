@@ -1,4 +1,6 @@
-package wechat;
+package wechat.group;
+
+import wechat.group.ListNode;
 
 public class InsertionSortList_147 {
     public ListNode insertionSortList(ListNode head) {

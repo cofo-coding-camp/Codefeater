@@ -1,4 +1,4 @@
-package wechat;
+package wechat.group;
 
 public class CountCompleteTreeNodes_222 {
     public int countNodes(TreeNode root) {

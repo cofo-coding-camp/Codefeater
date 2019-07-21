@@ -1,4 +1,4 @@
-package wechat;
+package wechat.group;
 
 public class MaximumBinaryTree_654 {
     public TreeNode constructMaximumBinaryTree(int[] nums) {

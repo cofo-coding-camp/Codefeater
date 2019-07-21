@@ -1,4 +1,4 @@
-package wechat;
+package wechat.mine;
 
 public class BestTimetoBuyandSellStockII_122 {
     public int maxProfit(int[] prices) {
