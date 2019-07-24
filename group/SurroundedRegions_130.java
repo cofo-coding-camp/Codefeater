@@ -9,7 +9,6 @@ public class SurroundedRegions_130 {
     }
 
     public void solve(char[][] board) {
-
         if (board == null || board.length == 0) return;
         n = board.length;
         m = board[0].length;
