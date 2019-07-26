@@ -1,22 +1,33 @@
+package wechat.mine;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Permutation_47 {
 
+    public List<List<Integer>> ans = new ArrayList<List<Integer>>();
     public List<List<Integer>> permuteUnique(int[] nums) {
-        Arrays.sort(nums);
-        List<List<Integer>> ans = new ArrayList<List<Integer>>();
         List<Integer> aux = new ArrayList<>();
-        assist(nums, ans, 0, aux;
+
+        Arrays.sort(nums);
+
+        for (int num : nums) aux.add(num);
+
+        backtrack(aux, 0, aux.size() - 1);
         return ans;
+
     }
 
-    public void assist(int[] nums, List<List<Integer>> ans, int idx, List<Integer> aux){
-        if (idx == nums.length) ans.add(new ArrayList<>(aux));
-
-        for (int i = idx; i < nums.length; i ++){
+    public void backtrack(List<Integer> aux, int left, int right){
+        if (left == right) ans.add(new ArrayList<>(aux));
+        else{
+            for (int i = left; i < right; i ++){
+                if (i != left && aux.get(left) == aux.get(i)) continue;
+                Collections.swap(aux, left, i);
+                backtrack(aux, left + 1, right);
+            }
 
         }
     }
