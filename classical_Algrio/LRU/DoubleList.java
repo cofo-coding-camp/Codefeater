@@ -13,6 +13,8 @@ public class DoubleList {
     }
 
     public void addFirst(Node x){
+
+        //处理四条链路边
         x.next = head.next;
         x.prev = head;
         head.next.prev = x;
