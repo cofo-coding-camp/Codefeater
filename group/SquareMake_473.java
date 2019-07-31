@@ -28,7 +28,6 @@ public class SquareMake_473 {
                 visited[i] = true;
                 if (dfs(nums, visited, target - chop)) return true;
                 visited[i] = false;
-
             }
         }
         return false;
