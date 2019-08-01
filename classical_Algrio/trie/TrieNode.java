@@ -1,4 +1,4 @@
-package wechat.classical_Algrio.trie;
+package wechat.classical_Algrio.Trie;
 
 public class TrieNode {
     private TrieNode[] links;
