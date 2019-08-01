@@ -1,6 +1,6 @@
 package wechat.mine;
 
-public class TreeInvert {
+public class TreeInvert_226 {
     public TreeNode invertTree(TreeNode root) {
         if (root == null) return null;
         TreeNode right = invertTree(root.right);

@@ -1,6 +1,6 @@
 package wechat.mine;
 
-public class SymmetricTreeNode {
+public class SymmetricTreeNode_101 {
     public boolean isSymmetric(TreeNode root) {
         return assist(root, root);
     }
