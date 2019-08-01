@@ -36,7 +36,7 @@ public class Trie {
         return node != null && node.isEnd();
     }
 
-    public boolean startWith(String prefix){
+    public boolean startsWith(String prefix){
         TrieNode node = searchPrefix(prefix);
         return node != null;
     }
