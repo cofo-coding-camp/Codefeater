@@ -2,14 +2,14 @@ package wechat.group;
 
 import java.util.HashSet;
 
-public class SubstringPatternRepeated {
+public class SubstringPatternRepeated_459 {
     public boolean repeatedSubstringPattern(String s) {
-
-        HashSet<Character> set = new HashSet<>();
-        for (int i = 0; i < s.length(); i ++){
-            set.add(s.charAt(i));
+        int len = s.length(), i = 0;
+        for (int t = 1; t <= len/2; t ++){
+            if (len % t != 0) continue;
+            for (i = t; i < len && s.charAt(i % t) == s.charAt(i); i ++);
+            if (i == len) return true;
         }
-
-
+        return false;
     }
 }
