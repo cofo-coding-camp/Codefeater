@@ -10,6 +10,7 @@ public class SortCharactersByFrequency_451 {
         Map<Character, Integer> map = new HashMap<>();
         int maxTimes = -1;
 
+        // 导入数组，获取基础的信息
         for (char c : chs){
             if (!map.containsKey(c)) map.put(c,1);
             else map.put(c, map.get(c) + 1);
@@ -17,6 +18,8 @@ public class SortCharactersByFrequency_451 {
         }
 
         ArrayList<Character>[] bucks = new ArrayList[maxTimes + 1];
+
+        // 获取keyset, 维护最终的一个桶排序
         for (char c : map.keySet()){
             int freq = map.get(c);
             if (bucks[freq] == null){
@@ -25,6 +28,7 @@ public class SortCharactersByFrequency_451 {
             bucks[freq].add(c);
         }
 
+        // 处理想要的答案
         int p = 0;
         for (int i = maxTimes; i >= 0; i --){
             if (bucks[i] != null){
