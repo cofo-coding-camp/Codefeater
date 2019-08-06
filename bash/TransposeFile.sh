@@ -9,6 +9,6 @@ awk '{
     }
 }END{
     for(j=1;j<=NF;j++){
-#        print res[j];
+        print res[j];
     }
 }' data/file_transport.txt
