@@ -10,6 +10,7 @@ public class PostorderNode_145 {
         if (root == null) return null;
         List<Integer> res = new ArrayList<>();
         Stack<TreeNode> sk = new Stack<>();
+        sk.push(root);
 
         while (!sk.isEmpty()){
             TreeNode aux = sk.peek();
