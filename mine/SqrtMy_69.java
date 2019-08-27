@@ -1,6 +1,6 @@
 package wechat.mine;
 
-public class SqrtMy {
+public class SqrtMy_69 {
     public int mySqrt(int x) {
         long start = 1, end = x;
         while (start + 1 < end){
