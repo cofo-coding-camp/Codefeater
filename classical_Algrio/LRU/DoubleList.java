@@ -22,6 +22,7 @@ public class DoubleList {
         size ++;
     }
 
+    //双向链表的删除，可以只用依赖当前的节点
     public void remove(Node x){
         x.prev.next = x.next;
         x.next.prev = x.prev;
