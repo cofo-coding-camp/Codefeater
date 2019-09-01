@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class LRUCache_146 {
     // 基础变量定义结束
+    // 注意此处hashmap声明的形式
     private HashMap<Integer, Node> map;
     private DoubleList cache;
     private int cap;
