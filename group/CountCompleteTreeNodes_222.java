@@ -13,6 +13,6 @@ public class CountCompleteTreeNodes_222 {
         if (root.right == null) return  1 + cns(root.left);
         int lefsCnt = cns(root.left);
         int righCnt = cns(root.right);
-        return  lefsCnt + righCnt;
+        return  1 + lefsCnt + righCnt;
     }
 }
