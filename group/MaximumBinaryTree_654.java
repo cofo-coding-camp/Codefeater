@@ -2,7 +2,7 @@ package wechat.group;
 
 public class MaximumBinaryTree_654 {
     public TreeNode constructMaximumBinaryTree(int[] nums) {
-        TreeNode root = cbt(nums, 0, nums.length -1 );
+        TreeNode root = cbt(nums, 0, nums.length - 1 );
         return root;
     }
 
