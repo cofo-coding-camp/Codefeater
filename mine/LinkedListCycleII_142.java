@@ -9,7 +9,7 @@ public class LinkedListCycleII_142 {
         while (hare != null && hare.next != null) {
             tortoise = tortoise.next;
             hare = hare.next.next;
-            if (tortoise == head) return tortoise;
+            if (tortoise == hare) return tortoise;
         }
         return null;
     }
