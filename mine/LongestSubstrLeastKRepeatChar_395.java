@@ -20,8 +20,7 @@ public class LongestSubstrLeastKRepeatChar_395 {
         while (p2 - p1 + 1 >= k && times[chars[p1] - 'a'] < k) p1 ++;
         while (p2 - p1 + 1 >= k && times[chars[p2] - 'a'] < k) p2 --;
 
-        for (int i = p1; i <= p2; i
-                ++) {
+        for (int i = p1; i <= p2; i ++) {
             //如果第i个不符合要求，切分左右做递归
             if (times[chars[i] - 'a'] < k)
                 return Math.max(assit(chars, k, p1, i - 1), assit(chars, k, i + 1, p2));
