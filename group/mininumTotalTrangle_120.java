@@ -1,6 +1,5 @@
 package wechat.group;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class mininumTotalTrangle_120 {
