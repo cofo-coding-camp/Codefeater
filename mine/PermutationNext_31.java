@@ -1,6 +1,6 @@
 package wechat.mine;
 
-public class PermutationNext_31 {
+public class  PermutationNext_31 {
     public void nextPermutation(int[] nums) {
         if (nums.length >= 2) assist(nums);
     }
