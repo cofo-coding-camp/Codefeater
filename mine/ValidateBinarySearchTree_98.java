@@ -1,5 +1,6 @@
 package wechat.mine;
 
+import java.util.Stack;
 public class ValidateBinarySearchTree_98 {
 
     // recursive 1
@@ -31,5 +32,19 @@ public class ValidateBinarySearchTree_98 {
     }
 
     //iterative
-
+    public boolean isValidBst(TreeNode root) {
+        Stack<TreeNode>  stack = new Stack<>();
+        double inorder = - Double.MAX_VALUE;
+        while (!stack.isEmpty() || root != null) {
+            while (root != null) {
+                stack.push(root);
+                root = root.left;
+            }
+            root = stack.pop();
+            if (root.val <= inorder) return false;
+            inorder = root.val;
+            root = root.right;
+        }
+        return true;
+    }
 }
