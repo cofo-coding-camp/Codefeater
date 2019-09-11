@@ -10,7 +10,7 @@ public class IsSubsequence_392 {
             if (s.charAt(i) == t.charAt(j)) i ++;
             j ++;
         }
-        System.out.println(i);
+
         if (i == m) return true;
         return false;
     }
