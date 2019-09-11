@@ -17,7 +17,6 @@ public class InsertionSortList_147 {
             pre.next = cur;
             pre = dummyNode;
 
-
             cur = next;
         }
         return dummyNode.next;
