@@ -5,7 +5,7 @@ public class InsertionSortList_147 {
         ListNode dummyNode = new ListNode(0);
         ListNode cur = head;
         ListNode pre = dummyNode;
-        ListNode next = null;
+        ListNode next;
 
         while (cur != null){
             next = cur.next;
