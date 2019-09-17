@@ -8,6 +8,7 @@ public class SearchinRotatedSortedArray_33 {
             int mid = lo + (hi - lo)/2;
             if (nums[mid] == target) return mid;
             if (nums[mid] < nums[hi]){
+                // 两边要兜住超过极限的值
                 if (nums[mid] < target && nums[hi] >= target) lo = mid + 1;
                 else hi = mid - 1;
             }else{
